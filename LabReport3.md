@@ -9,7 +9,7 @@ I'm choosing `reversedInPlace` in `ArrayExamples`
     int[] exArray = { 1, 2, 3, 4, 5};
     ArrayExamples.reverseInPlace(exArray);
     assertArrayEquals(new int[]{5, 4, 3, 2, 1}, exArray);
-  }`
+  }`  
 2.  
 `@Test 
 	public void testReverseInPlace() {
@@ -18,6 +18,8 @@ I'm choosing `reversedInPlace` in `ArrayExamples`
     assertArrayEquals(new int[]{ 3 }, input1);
 	}`  
 3.  
+![Image](labReport2_ss1.png)
+![Image](labReport2_ss2.png)
 
   
 
