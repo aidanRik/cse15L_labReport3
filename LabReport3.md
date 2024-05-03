@@ -256,11 +256,89 @@ File example:
 Explanation:  the command `grep -n` becomes useful here, allowing us to find all the lines within `Session2.pdf.txt` that contain the string `the`  
 
 3.  
-Command:
+Command: `grep -v`
 Directory example:
-Explanation:
-File example:
-Explanation:
+`aidan_rikic@Aidans-MacBook-Air docsearch % grep -v "pmed" ./technical/plos
+grep: ./technical/plos: Is a directory`
+
+Explanation: The command `grep -v` is used to find every line within a file that doesn't contain the given string. Therefore it cannot be used on directories
+File example:  
+`aidan_rikic@Aidans-MacBook-Air docsearch % grep -v "the" ./technical/plos/journal.pbio.0020001.txt
+        countries, asserting that “This unbalanced distribution of scientific activity generates
+        development itself.” Indeed, Mr. Annan's sentiments have also been echoed recently by
+        Goldemberg 1998; Riddoch 2000). For example, recent United Nations Educational, Scientific,
+        produced annually, with 36.6% and 37.5%, respectively, worldwide (UNESCO 2001).
+            publications produced annually.
+        developing worlds actually remaining unchanged or even increasing, as Mr. Annan has
+        developing countries. For example, Latin America and China, although representing,
+        (26%). The percentage of global scientific publications from North America actually
+        lion's share (84.2%), followed by Canada (10.35%). Latin America as a whole contributed
+        2002).
+        assessing scientific productivity or technical advances (May 1997). More relevant
+        invested in research and development for each region, also show that, in contrast to both
+        of publications per amount of money allocated to research and development in Latin America,
+        particularly from 1995 until 2000 (Figure 2).
+        demonstrate that such developing regions as Latin America are making substantial
+        product (GDP) invested in science in Latin America throughout this 10-year period was only
+        concluded that, as a group, Latin America could afford to invest a much higher proportion
+        of its resources in scientific research and development. Latin American investment in
+        rate as well as in financial investment in science and technology. Some countries have
+        performed particularly well. For example, Uruguay, Chile, Panama, and Cuba averaged,
+        respectively, 6.8, 5.3, 5.2, and 3.4 publications per million dollars of research and
+            development been increasing in Latin America while decreasing in United States and
+            Canada?
+        which are mutually exclusive. It is possible that publishing in international journals as a
+        measure of scientific productivity is becoming more important in Latin America. Increased
+        might have been an important stimulus. International cooperation resulting in more
+        United States could reflect a trend towards more costly research in larger scientific
+        programs.
+        Scientific Impact from Latin America
+        journals (
+        Nature and 
+        Science ; with impact factors of 27.96 and 23.33, respectively) and in
+        that region. Thus, more than one region would receive credit for a single publication if
+        that publication had been written by multiple authors from institutions of different
+        regions.
+        however, Latin America represented only 6%, while Canada and United States accounted,
+        Canada across all subject areas in 
+        Science and 
+        In 
+        Science and 
+        However, publishing in 
+        Science and 
+        from North America (73%) and Europe (21%) (ISI 2001b). No researcher working in a Latin
+        publications per researcher funding amount. Similar findings were also reported for Asia
+        papers to become a highly cited scientist. It requires attending international meetings and
+        activities, however, requires a greater proportion of research money being spent on
+        A Long Road Yet to Travel
+        The positive trends in scientific productivity in Latin America should not be
+        developing world (Goldemberg 1998; Annan 2003). One is that science, as a discipline, would
+        dominated by two geographic regions. Many scientific problems could be solved much more
+        areas of concern that are having a proportionally greater scientific and social impact upon
+        Brazil (Goldemberg 1998) and biomedical sciences in Cuba (Castro Díaz-Balart 2002). These
+        world.
+            input from those developing regions that are so important for global processes.
+        direction. The extremely high scientific productivity of many developing nations, corrected
+        built.`  
+	
+Explanation: the command `grep -v` is used to print every every line within a file that doesn't contain the string `"the"`. Here it is useful to find sentences that don't use the.  
+
+4.  a
+Command: `grep -e`
+Directory example:
+`aidan_rikic@Aidans-MacBook-Air docsearch % grep -e "bcr" -e "cc" ./technical/biomed
+grep: ./technical/biomed: Is a directory`
+
+Explanation: The command `grep -e` allows you to search for multiple different strings within a file. Here we tried searching for lines containing `"bcr"` and `"cc"` but got an error because it can only search within files not directories.  
+
+File example:  
+`aidan_rikic@Aidans-MacBook-Air docsearch % grep -e "whistleblower" -e "whistleblowers" ./technical/plos/pmed.0020281.txt
+        In the lonely and, at times, discouraging world of whistleblowing, we whistleblowers are
+        might make. Truth is the basis for the power of a whistleblower, one that can withstand the
+        A whistleblower's success depends upon competent and articulate media. The debate to
+        this is to have succeeded [as a whistleblower].”`  
+	
+Explanation: The command `grep -e` allows you to search for multiple strings within a file at once. Here it is useful to lookup mutliple different types of whistleblower like `"whistleblower"` and `"whistleblowers"`. 
 
 
 
