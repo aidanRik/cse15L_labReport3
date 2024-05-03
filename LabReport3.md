@@ -323,8 +323,8 @@ File example:
 	
 Explanation: the command `grep -v` is used to print every every line within a file that doesn't contain the string `"the"`. Here it is useful to find sentences that don't use the.  
 
-4.  a
-Command: `grep -e`
+4.  
+Command: `grep -e`  
 Directory example:
 `aidan_rikic@Aidans-MacBook-Air docsearch % grep -e "bcr" -e "cc" ./technical/biomed
 grep: ./technical/biomed: Is a directory`
