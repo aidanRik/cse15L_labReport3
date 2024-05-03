@@ -39,7 +39,7 @@ The issue with the original code was that it was changing the array as it was it
 
 **Part2**  
 1.  
-Command: `grep -r`
+Command: `grep -r`  
 Directory Example:  
 `aidan_rikic@Aidans-MacBook-Air docsearch % grep -r "biomed" ./technical/biomed
 ./technical/biomed/1471-2202-2-9.txt:        http://www.biomedcentral.com/1471-2202/2/8). It is now
@@ -68,7 +68,7 @@ Directory Example:
 ./technical/biomed/1472-6947-3-5.txt:        another level of biomedical data integration in which array
 ./technical/biomed/gb-2003-4-4-r28.txt:        biomedical research community. GoMiner is flexible both`  
 
-Explanation: The `grep -r` command allows us to search recursively through certain directories and their subdirectories for files that contain the specific string given. 
+Explanation: The `grep -r` command allows us to search recursively through certain directories and their subdirectories for files that contain the specific string given.  
 
 File Example:  
 `aidan_rikic@Aidans-MacBook-Air docsearch % grep -r "biomed" ./technical/biomed/1471-2202-2-9.txt 
