@@ -78,9 +78,9 @@ Explanation: When we add a file to the end of the path, the `grep -r` command on
 
 2.  
 Command: `grep -n`  
-Directory example:
+Directory example:  
 `aidan_rikic@Aidans-MacBook-Air docsearch % grep -n "the" ./technical/government
-grep: ./technical/government: Is a directory`
+grep: ./technical/government: Is a directory`  
 
 Explanation: The command `grep -n` searches within files only, and returns lines in a file that contan the string given and the number of the line.  
 
@@ -256,12 +256,12 @@ File example:
 Explanation:  the command `grep -n` becomes useful here, allowing us to find all the lines within `Session2.pdf.txt` that contain the string `the`  
 
 3.  
-Command: `grep -v`
-Directory example:
+Command: `grep -v`  
+Directory example:  
 `aidan_rikic@Aidans-MacBook-Air docsearch % grep -v "pmed" ./technical/plos
-grep: ./technical/plos: Is a directory`
+grep: ./technical/plos: Is a directory`  
 
-Explanation: The command `grep -v` is used to find every line within a file that doesn't contain the given string. Therefore it cannot be used on directories
+Explanation: The command `grep -v` is used to find every line within a file that doesn't contain the given string. Therefore it cannot be used on directories.  
 File example:  
 `aidan_rikic@Aidans-MacBook-Air docsearch % grep -v "the" ./technical/plos/journal.pbio.0020001.txt
         countries, asserting that “This unbalanced distribution of scientific activity generates
@@ -325,9 +325,9 @@ Explanation: the command `grep -v` is used to print every every line within a fi
 
 4.  
 Command: `grep -e`  
-Directory example:
+Directory example:  
 `aidan_rikic@Aidans-MacBook-Air docsearch % grep -e "bcr" -e "cc" ./technical/biomed
-grep: ./technical/biomed: Is a directory`
+grep: ./technical/biomed: Is a directory`  
 
 Explanation: The command `grep -e` allows you to search for multiple different strings within a file. Here we tried searching for lines containing `"bcr"` and `"cc"` but got an error because it can only search within files not directories.  
 
@@ -338,7 +338,7 @@ File example:
         A whistleblower's success depends upon competent and articulate media. The debate to
         this is to have succeeded [as a whistleblower].”`  
 	
-Explanation: The command `grep -e` allows you to search for multiple strings within a file at once. Here it is useful to lookup mutliple different types of whistleblower like `"whistleblower"` and `"whistleblowers"`. 
+Explanation: The command `grep -e` allows you to search for multiple strings within a file at once. Here it is useful to lookup mutliple different types of whistleblower like `"whistleblower"` and `"whistleblowers"`.  
 
 
 
