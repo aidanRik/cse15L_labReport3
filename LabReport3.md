@@ -18,8 +18,8 @@ I'm choosing `reversedInPlace` in `ArrayExamples`
     assertArrayEquals(new int[]{ 3 }, input1);
 	}`  
 3.  
-![Image](labReport2_ss1.png)
-![Image](labReport2_ss2.png)  
+![Image](ss1.png)
+![Image](ss2.png)  
 4.  
 Failing code:  
 `static void reverseInPlace(int[] arr) {
