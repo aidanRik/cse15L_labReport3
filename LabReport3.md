@@ -18,7 +18,9 @@ I'm choosing `reversedInPlace` in `ArrayExamples`
     assertArrayEquals(new int[]{ 3 }, input1);
 	}`  
 3.  
-![Image](ss11.png)
+Screenshot 1 showcasing the symptom of the test passing   
+![Image](ss11.png)  
+Screenshot 2 showcasing the symptom of the test failing  
 ![Image](ss22.png)  
 4.  
 Failing code:  
